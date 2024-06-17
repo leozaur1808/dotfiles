@@ -23,5 +23,7 @@ create_symlink_with_backup "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
 
 create_symlink_with_backup "$DOTFILES_DIR/.hushlogin" "$HOME/.hushlogin"
 
+create_symlink_with_backup "$DOTFILES_DIR/.curlrc" "$HOME/.curlrc"
+
 # Add more symlinks as needed for other dotfiles
 

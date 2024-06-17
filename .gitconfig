@@ -1,0 +1,8 @@
+[user]
+    name = Lev Zharikov
+    email = 33627925+leozaur1808@users.noreply.github.com
+
+[core]
+    editor = vim
+    autocrlf = input
+    safecrlf = true
