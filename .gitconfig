@@ -2,6 +2,9 @@
     name = Lev Zharikov
     email = 33627925+leozaur1808@users.noreply.github.com
 
+[init]
+    defaultBranch = main
+
 [core]
     editor = vim
     autocrlf = input
