@@ -4,7 +4,7 @@ To set up these dotfiles on your system, follow these steps:
 
 **Clone the repository:**
 ```bash
-git clone https://github.com/your-username/dotfiles.git ~/dotfiles
+git clone https://github.com/leozaur1808/dotfiles.git ~/dotfiles
 ```
 **Run the setup script:**
 
