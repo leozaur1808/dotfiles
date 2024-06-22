@@ -103,7 +103,6 @@ aliases=(
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  brew
   sudo
 )
 
@@ -115,6 +114,9 @@ plugins=(
 #  fi
 if [ "$(uname)" == "Linux" ]; then
     aliases+=(debian)
+fi
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    plugins+=(brew battery)
 fi
 
 source "$OSH/oh-my-bash.sh"
