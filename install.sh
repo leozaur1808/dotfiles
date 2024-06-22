@@ -45,7 +45,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     fi
 
     # List of packages to install
-    BREW_PACKAGES=("git" "neovim" "node")
+    BREW_PACKAGES=("git" "node")
 
     # Install each package if not already installed
     for package in "${BREW_PACKAGES[@]}"; do
@@ -61,7 +61,7 @@ elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
     sudo apt update
 
     # List of packages to install
-    APT_PACKAGES=("git" "curl" "neovim" "node")
+    APT_PACKAGES=("git" "curl" "node")
 
     # Install each package if not already installed
     for package in "${APT_PACKAGES[@]}"; do
