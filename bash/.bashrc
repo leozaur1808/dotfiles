@@ -150,4 +150,5 @@ export SSH_KEY_PATH="$HOME/.ssh/key"
 # alias ohmybash="mate ~/.oh-my-bash"
 if [[ "$OSTYPE" == "darwin"* ]]; then
     alias firefox="open -a firefox"
+    alias gcc="gcc-14"
 fi
