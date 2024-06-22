@@ -1,7 +1,7 @@
 [user]
     name = Lev Zharikov
     email = 33627925+leozaur1808@users.noreply.github.com
-
+	signingkey = /Users/leozaur1808/.ssh/public_key.pub
 [init]
     defaultBranch = main
 
@@ -9,3 +9,6 @@
     editor = vim
     autocrlf = input
     safecrlf = true
+[gpg]
+	format = ssh
+    

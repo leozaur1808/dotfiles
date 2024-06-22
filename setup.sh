@@ -47,5 +47,11 @@ else
     echo ".bashrc source snippet already present in $BASH_PROFILE"
 fi
 
+# Create .ssh directory and store public ssh key there to sign commits locally
+mkdir -p "$HOME/.ssh"
+curl -fsSL "https://github.com/leozaur1808.keys" > $HOME/.ssh/public_key.pub
+git config --global user.signingkey $HOME/.ssh/public_key.pub
+echo "Created .ssh and stored public ssh key there"
+
 echo "Setup completed successfully."
 
