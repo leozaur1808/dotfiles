@@ -2,14 +2,16 @@
 
 # Function to check if the latest Bash is installed
 is_latest_bash_installed() {
-    local latest_bash_path="$(brew --prefix)/bin/bash"
+    local latest_bash_path
+    latest_bash_path="$(brew --prefix)/bin/bash"
     [[ -x "$latest_bash_path" && "$($latest_bash_path --version | head -n1)" == *"version 5."* ]]
 }
 
 # Function to install the latest Bash and set it as the default shell
 install_latest_bash() {
     brew install bash
-    local new_bash_path="$(brew --prefix)/bin/bash"
+    local new_bash_path
+    new_bash_path="$(brew --prefix)/bin/bash"
     
     # Add the new Bash to the list of allowed shells
     if ! grep -Fxq "$new_bash_path" /etc/shells; then
