@@ -45,7 +45,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     fi
 
     # List of packages to install
-    BREW_PACKAGES=("git" "node" "gcc")
+    BREW_PACKAGES=("git" "node" "gcc" "python@3.12")
 
     # Install each package if not already installed
     for package in "${BREW_PACKAGES[@]}"; do
@@ -61,7 +61,7 @@ elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
     sudo apt update
 
     # List of packages to install
-    APT_PACKAGES=("git" "curl" "node" "gcc")
+    APT_PACKAGES=("git" "curl" "node" "gcc" "python3.12")
 
     # Install each package if not already installed
     for package in "${APT_PACKAGES[@]}"; do
