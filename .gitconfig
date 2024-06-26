@@ -17,3 +17,12 @@
 	gpgsign = true
 [gpg "ssh"]
 	allowedSignersFile = ~/.ssh/allowed_signers
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+
