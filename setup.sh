@@ -52,5 +52,17 @@ mkdir -p "$HOME/.ssh"
 curl -fsSL "https://github.com/leozaur1808.keys" > $HOME/.ssh/public_key.pub
 echo "Created .ssh and stored public ssh key there"
 
-echo "Setup completed successfully."
+# Check if .globalenv directory already exists
+if [ ! -d "$HOME/.globalenv" ]; then
+    # Create .globalenv directory as Python virtual environment
+    python3 -m venv "$HOME/.globalenv"
+fi
 
+# Activate .globalenv virtual environment
+source "$HOME/.globalenv/bin/activate"
+
+echo "Created python .globalenv"
+
+source $HOME/.bash_profile
+
+echo "Setup completed successfully."

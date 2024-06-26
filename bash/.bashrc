@@ -151,3 +151,6 @@ export SSH_KEY_PATH="$HOME/.ssh/key"
 if [[ "$OSTYPE" == "darwin"* ]]; then
     alias firefox="open -a firefox"
 fi
+
+#Activate global python environment
+source "$HOME/.globalenv/bin/activate"
