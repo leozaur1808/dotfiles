@@ -49,7 +49,10 @@ fi
 
 # Create .ssh directory and store public ssh key there to sign commits locally
 mkdir -p "$HOME/.ssh"
-curl -fsSL "https://github.com/leozaur1808.keys" > $HOME/.ssh/public_key.pub
+PUBLIC_KEY=$(curl -fsSL "https://github.com/leozaur1808.keys")
+echo "$PUBLIC_KEY" > "$HOME/.ssh/key.pub"
+echo "33627925+leozaur1808@users.noreply.github.com $PUBLIC_KEY" >> "$HOME/.ssh/allowed_signers"
+
 echo "Created .ssh and stored public ssh key there"
 
 # Check if .globalenv directory already exists

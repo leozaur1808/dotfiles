@@ -1,7 +1,7 @@
 [user]
     name = Lev Zharikov
     email = 33627925+leozaur1808@users.noreply.github.com
-	signingkey = ~/.ssh/public_key.pub
+	signingkey = ~/.ssh/key.pub
 [init]
     defaultBranch = main
 
@@ -11,4 +11,9 @@
     safecrlf = true
 [gpg]
 	format = ssh
-    
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[gpg "ssh"]
+	allowedSignersFile = ~/.ssh/allowed_signers
