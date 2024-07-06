@@ -1,6 +1,6 @@
 [user]
     name = Lev Zharikov
-    email = 33627925+leozaur1808@users.noreply.github.com
+    email = lev_zharikov@outlook.com 
 	signingkey = ~/.ssh/key.pub
 [init]
     defaultBranch = main
