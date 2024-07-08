@@ -4,7 +4,6 @@
 	signingkey = ~/.ssh/key.pub
 [init]
     defaultBranch = main
-
 [core]
     editor = vim
     autocrlf = input
