@@ -51,7 +51,7 @@ fi
 mkdir -p "$HOME/.ssh"
 PUBLIC_KEY=$(curl -fsSL "https://github.com/leozaur1808.keys")
 echo "$PUBLIC_KEY" > "$HOME/.ssh/key.pub"
-echo "lev_zharikov@outlook.com $PUBLIC_KEY" >> "$HOME/.ssh/allowed_signers"
+echo "lev_zharikov@outlook.com $PUBLIC_KEY" > "$HOME/.ssh/allowed_signers"
 
 echo "Created .ssh and stored public ssh key there"
 
