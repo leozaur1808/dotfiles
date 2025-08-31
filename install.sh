@@ -47,7 +47,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     fi
 
     # List of packages to install
-    BREW_PACKAGES=("git" "python@3.13")
+    BREW_PACKAGES=("git" "python@3.14")
 
     # Install each package if not already installed
     for package in "${BREW_PACKAGES[@]}"; do
@@ -63,7 +63,7 @@ elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
     sudo apt update
 
     # List of packages to install
-    APT_PACKAGES=("git" "curl" "python3.13" "python3.13-venv")
+    APT_PACKAGES=("git" "curl" "python3.14" "python3.14-venv")
 
     # Install each package if not already installed
     for package in "${APT_PACKAGES[@]}"; do
